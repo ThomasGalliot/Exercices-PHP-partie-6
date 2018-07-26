@@ -1,6 +1,6 @@
 <?php
     //exercice1
-    if (isset($_GET['lastname']) && isset($_GET['firstname']))
+    if (isset($_GET['lastname']) && $_GET['firstname'])
         echo "Bonjour" . $_GET['lastname'] . " " . $_GET['lirstname'];
     
     else
@@ -18,7 +18,7 @@
 
 <?php
     //exercice3
-    if (isset($_GET['startDate']) && isset($_GET['endDate']))
+    if (isset($_GET['startDate']) && $_GET['endDate'])
         echo $_GET['startDate'] . " " . $_GET['endDate'];
     
     else
@@ -27,7 +27,7 @@
 
 <?php
     //exercice4
-    if (isset($_GET['language']) && isset($_GET['server']))
+    if (isset($_GET['language']) && $_GET['server'])
         echo $_GET['language'] . " " . $_GET['server'];
     
     else
@@ -45,7 +45,7 @@
 
 <?php
     //exercice6
-    if (isset($_GET['building']) && isset($_GET['room']))
+    if (isset($_GET['building']) && $_GET['room'])
         echo $_GET['building'] . $_GET['room'];
     
     else
